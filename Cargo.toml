@@ -8,5 +8,5 @@ edition = "2021"
 [dependencies]
 anyhow = "1"
 arboard = "3"
-clap = { version = "4", features = ["derive"] }
-image = "0.24"
+clap = { version = "4", default-features=false, features = ["std", "derive"] }
+image = {version="0.24", default-features=false, features = ["png"] }
